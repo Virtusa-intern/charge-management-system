@@ -91,84 +91,12 @@ function App() {
       <main className="py-8">
         {renderActiveComponent()}
       </main>
-
-      {/* System Status Overview - Only show on dashboard */}
-      {activeTab === 'dashboard' && (
-        <section className="max-w-7xl mx-auto px-4 mb-8">
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-              🚀 System Components Status
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              
-              {/* Backend Components */}
-              <div className="flex items-center p-4 bg-green-50 border border-green-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-green-800 block">Backend API</span>
-                  <span className="text-sm text-green-600">Spring Boot + MySQL</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center p-4 bg-green-50 border border-green-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-green-800 block">Rules Engine</span>
-                  <span className="text-sm text-green-600">Business Logic Ready</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center p-4 bg-green-50 border border-green-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-green-800 block">Charge Calculator</span>
-                  <span className="text-sm text-green-600">Full Implementation</span>
-                </div>
-              </div>
-
-              {/* Frontend Components */}
-              <div className="flex items-center p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-blue-800 block">React Frontend</span>
-                  <span className="text-sm text-blue-600">All Components Ready</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-blue-800 block">User Management</span>
-                  <span className="text-sm text-blue-600">Role-based Access</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center p-4 bg-purple-50 border border-purple-200 rounded-lg">
-                <span className="text-2xl mr-3">✅</span>
-                <div>
-                  <span className="font-medium text-purple-800 block">Test Execution</span>
-                  <span className="text-sm text-purple-600">Comprehensive Testing</span>
-                </div>
-              </div>
-              
-            </div>
-            
-            {/* Next Steps */}
-            <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-              <h4 className="font-semibold text-yellow-800 mb-2">🎯 Ready for Production</h4>
-              <p className="text-sm text-yellow-700">
-                All core components are implemented. Consider adding authentication, 
-                logging, monitoring, and deployment configurations for production use.
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
+      
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-4 mt-auto">
         <p className="text-sm opacity-80">
-          &copy; 2024 Charge Management System | Built with Spring Boot + React + Tailwind CSS
+          &copy; 2024 Charge Management System 
         </p>
       </footer>
     </div>
